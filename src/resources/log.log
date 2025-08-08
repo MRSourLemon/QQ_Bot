@@ -1,0 +1,379 @@
+Microsoft Windows [版本 10.0.22631.2428]
+(c) Microsoft Corporation。保留所有权利。
+
+C:\Users\Administrator\Desktop\qqbot_dev\nb_test>nb run --reload
+使用 Python: C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\Scripts\python.exe
+启动重载监视，当前进程 [16324].
+08-05 04:57:40 [SUCCESS] nonebot | NoneBot is initializing...
+08-05 04:57:40 [INFO] nonebot | Current Env: prod
+08-05 04:57:41 [SUCCESS] nonebot | Succeeded to load plugin "muteuser" from "src.plugins.muteuser"
+08-05 04:57:41 [SUCCESS] nonebot | Succeeded to load plugin "test" from "src.plugins.test"
+08-05 04:57:41 [SUCCESS] nonebot | Succeeded to load plugin "gif" from "src.plugins.gif"
+08-05 04:57:41 [SUCCESS] nonebot | Succeeded to load plugin "weather" from "src.plugins.weather"
+08-05 04:57:41 [SUCCESS] nonebot | Succeeded to load plugin "image" from "src.plugins.image"
+08-05 04:57:41 [SUCCESS] nonebot | Succeeded to load plugin "jianyan" from "src.plugins.jianyan"
+08-05 04:57:41 [SUCCESS] nonebot | Succeeded to load plugin "update" from "src.plugins.update"
+08-05 04:57:41 [SUCCESS] nonebot | Succeeded to load plugin "luxun" from "src.plugins.luxun"
+08-05 04:57:41 [SUCCESS] nonebot | Succeeded to load plugin "id" from "src.plugins.id"
+08-05 04:57:41 [SUCCESS] nonebot | Succeeded to load plugin "mention" from "src.plugins.mention"
+08-05 04:57:41 [SUCCESS] nonebot | Running NoneBot...
+08-05 04:57:41 [SUCCESS] nonebot | Loaded adapters: QQ
+08-05 04:57:41 [INFO] nonebot | Application startup completed.
+08-05 04:57:44 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 04:57:44 [SUCCESS] nonebot | QQ 102801649 | [READY]: {'event_id': None, 'version': 1, 'session_id': 'b177a893-e793-4795-a11d-a1bee88f95c4', 'user': {'id': '15651322840204851368', 'username': '2108机器人-测试中', 'avatar': None, 'bot': True, 'union_openid': None, 'union_user_account': None}, 'shard': (0, 1)}
+08-05 05:27:43 [WARNING] nonebot | QQ | Received reconnect event from server. Try to reconnect...
+08-05 05:27:47 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 05:27:47 [WARNING] nonebot | QQ | Unknown payload from server: Payload(op=0, s=2, t='RESUMED', d='')
+08-05 05:44:33 [SUCCESS] nonebot | QQ 102801649 | [GROUP_AT_MESSAGE_CREATE]: Message ROBOT1.0_sd.BxFnMjcdQSDo4vcgO224JVQavQJWEI7K2Lsz11z.zYuLBPfWsikfNM0UMEFZSCpf1O50H-SIOGuV.ossgPRR2EO.ecGR9jZII.8rYir8! from 12D25F964F74649FF3AC1A1A68000180@[Group:F4D2DF3718B5C7A09F9B7FF9DD13446F]: [Text(type='text', data={'text': '/今日人品 '})]
+08-05 05:44:33 [INFO] nonebot | Event will be handled by Matcher(type='message', module=src.plugins.test, lineno=33)
+08-05 05:44:38 [INFO] nonebot | Matcher(type='message', module=src.plugins.test, lineno=33) running complete
+08-05 05:44:54 [SUCCESS] nonebot | QQ 102801649 | [GROUP_AT_MESSAGE_CREATE]: Message ROBOT1.0_sd.BxFnMjcdQSDo4vcgO204rZFo9Oxakysvrz64TP8U2ig7JcBILxIMPMy-mbtGyiyg-ILSLJt4rxA3OwfmpaRR2EO.ecGR9jZII.8rYir8! from 12D25F964F74649FF3AC1A1A68000180@[Group:F4D2DF3718B5C7A09F9B7FF9DD13446F]: [Text(type='text', data={'text': '/梗图 '})]
+08-05 05:44:54 [INFO] nonebot | Event will be handled by Matcher(type='message', module=src.plugins.image, lineno=10)
+08-05 05:44:57 [INFO] nonebot | Matcher(type='message', module=src.plugins.image, lineno=10) running complete
+08-05 05:51:32 [SUCCESS] nonebot | QQ 102801649 | [GROUP_AT_MESSAGE_CREATE]: Message ROBOT1.0_kwG7tQChpXyaG-AFIx5vXdkK5RPSZJMsFmOhuTtQPgaQrP-eSRArYgFSlHA9OYbNzg-RFUceDCAwNw8fhh79t.12f1hNQfw-4Q1pmfeHKh0! from EE0EF4397AEA3A4C9B3C8A63FE6DF37E@[Group:F4D2DF3718B5C7A09F9B7FF9DD13446F]: [Text(type='text', data={'text': '/梗图 '})]
+08-05 05:51:32 [INFO] nonebot | Event will be handled by Matcher(type='message', module=src.plugins.image, lineno=10)
+08-05 05:51:34 [INFO] nonebot | Matcher(type='message', module=src.plugins.image, lineno=10) running complete
+08-05 05:51:46 [SUCCESS] nonebot | QQ 102801649 | [GROUP_AT_MESSAGE_CREATE]: Message ROBOT1.0_kwG7tQChpXyaG-AFIx5vXX3oHebxBtNYgXpV6wCX.lXx-0l6GJIILbGVvgKJDoZzNiG7nO6h3o8Tpy-TXwx-tv12f1hNQfw-4Q1pmfeHKh0! from EE0EF4397AEA3A4C9B3C8A63FE6DF37E@[Group:F4D2DF3718B5C7A09F9B7FF9DD13446F]: [Text(type='text', data={'text': '/今日人品 '})]
+08-05 05:51:46 [INFO] nonebot | Event will be handled by Matcher(type='message', module=src.plugins.test, lineno=33)
+08-05 05:51:48 [INFO] nonebot | Matcher(type='message', module=src.plugins.test, lineno=33) running complete
+08-05 05:51:58 [SUCCESS] nonebot | QQ 102801649 | [GROUP_AT_MESSAGE_CREATE]: Message ROBOT1.0_kwG7tQChpXyaG-AFIx5vXQ0NRUiE.5nRbIJa.sUDkInsnrpljtneJUP8f-ReQpZb-7cVF5skjP1.Wx.GRGL4vK9wCd1gBlIv5yum1r2gkAg! from EE0EF4397AEA3A4C9B3C8A63FE6DF37E@[Group:F4D2DF3718B5C7A09F9B7FF9DD13446F]: [Text(type='text', data={'text': '/梗图 '})]
+08-05 05:51:58 [INFO] nonebot | Event will be handled by Matcher(type='message', module=src.plugins.image, lineno=10)
+08-05 05:52:02 [INFO] nonebot | Matcher(type='message', module=src.plugins.image, lineno=10) running complete
+08-05 05:57:47 [WARNING] nonebot | QQ | Received reconnect event from server. Try to reconnect...
+08-05 05:57:50 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 05:57:50 [WARNING] nonebot | QQ | Unknown payload from server: Payload(op=0, s=8, t='RESUMED', d='')
+08-05 06:27:50 [WARNING] nonebot | QQ | Received reconnect event from server. Try to reconnect...
+08-05 06:27:53 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 06:27:53 [WARNING] nonebot | QQ | Unknown payload from server: Payload(op=0, s=9, t='RESUMED', d='')
+Watchfiles 在 "src\plugins\image.py" 中发现变化. 正在重新加载...
+08-05 06:37:19 [INFO] nonebot | Shutting down
+08-05 06:37:19 [INFO] nonebot | Waiting for application shutdown. (CTRL+C to force quit)
+08-05 06:37:19 [INFO] nonebot | Application shutdown complete.
+重启进程 [11296].
+08-05 06:37:20 [SUCCESS] nonebot | NoneBot is initializing...
+08-05 06:37:20 [INFO] nonebot | Current Env: prod
+08-05 06:37:21 [SUCCESS] nonebot | Succeeded to load plugin "luxun" from "src.plugins.luxun"
+08-05 06:37:21 [SUCCESS] nonebot | Succeeded to load plugin "id" from "src.plugins.id"
+08-05 06:37:21 [SUCCESS] nonebot | Succeeded to load plugin "gif" from "src.plugins.gif"
+08-05 06:37:21 [SUCCESS] nonebot | Succeeded to load plugin "weather" from "src.plugins.weather"
+08-05 06:37:21 [SUCCESS] nonebot | Succeeded to load plugin "muteuser" from "src.plugins.muteuser"
+08-05 06:37:21 [SUCCESS] nonebot | Succeeded to load plugin "test" from "src.plugins.test"
+08-05 06:37:21 [SUCCESS] nonebot | Succeeded to load plugin "image" from "src.plugins.image"
+08-05 06:37:21 [SUCCESS] nonebot | Succeeded to load plugin "mention" from "src.plugins.mention"
+08-05 06:37:21 [SUCCESS] nonebot | Succeeded to load plugin "update" from "src.plugins.update"
+08-05 06:37:21 [SUCCESS] nonebot | Succeeded to load plugin "jianyan" from "src.plugins.jianyan"
+08-05 06:37:21 [SUCCESS] nonebot | Running NoneBot...
+08-05 06:37:21 [SUCCESS] nonebot | Loaded adapters: QQ
+08-05 06:37:21 [INFO] nonebot | Application startup completed.
+08-05 06:37:22 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 06:37:22 [SUCCESS] nonebot | QQ 102801649 | [READY]: {'event_id': None, 'version': 1, 'session_id': 'e5caa018-bd6a-4279-8b01-7416b5bbf3de', 'user': {'id': '15651322840204851368', 'username': '2108机器人-测试中', 'avatar': None, 'bot': True, 'union_openid': None, 'union_user_account': None}, 'shard': (0, 1)}
+Watchfiles 在 "src\plugins\image.py" 中发现变化. 正在重新加载...
+08-05 06:38:22 [INFO] nonebot | Shutting down
+08-05 06:38:22 [INFO] nonebot | Waiting for application shutdown. (CTRL+C to force quit)
+08-05 06:38:22 [INFO] nonebot | Application shutdown complete.
+重启进程 [15780].
+08-05 06:38:23 [SUCCESS] nonebot | NoneBot is initializing...
+08-05 06:38:23 [INFO] nonebot | Current Env: prod
+08-05 06:38:23 [SUCCESS] nonebot | Succeeded to load plugin "jianyan" from "src.plugins.jianyan"
+08-05 06:38:23 [SUCCESS] nonebot | Succeeded to load plugin "image" from "src.plugins.image"
+08-05 06:38:23 [SUCCESS] nonebot | Succeeded to load plugin "id" from "src.plugins.id"
+08-05 06:38:23 [SUCCESS] nonebot | Succeeded to load plugin "gif" from "src.plugins.gif"
+08-05 06:38:23 [SUCCESS] nonebot | Succeeded to load plugin "update" from "src.plugins.update"
+08-05 06:38:23 [SUCCESS] nonebot | Succeeded to load plugin "luxun" from "src.plugins.luxun"
+08-05 06:38:23 [SUCCESS] nonebot | Succeeded to load plugin "mention" from "src.plugins.mention"
+08-05 06:38:23 [SUCCESS] nonebot | Succeeded to load plugin "weather" from "src.plugins.weather"
+08-05 06:38:23 [SUCCESS] nonebot | Succeeded to load plugin "test" from "src.plugins.test"
+08-05 06:38:23 [SUCCESS] nonebot | Succeeded to load plugin "muteuser" from "src.plugins.muteuser"
+08-05 06:38:23 [SUCCESS] nonebot | Running NoneBot...
+08-05 06:38:23 [SUCCESS] nonebot | Loaded adapters: QQ
+08-05 06:38:23 [INFO] nonebot | Application startup completed.
+08-05 06:38:26 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 06:38:26 [SUCCESS] nonebot | QQ 102801649 | [READY]: {'event_id': None, 'version': 1, 'session_id': '7e173425-15c3-445f-abe1-b908c1fbb9ed', 'user': {'id': '15651322840204851368', 'username': '2108机器人-测试中', 'avatar': None, 'bot': True, 'union_openid': None, 'union_user_account': None}, 'shard': (0, 1)}
+Watchfiles 在 "src\plugins\image.py" 中发现变化. 正在重新加载...
+08-05 06:40:37 [INFO] nonebot | Shutting down
+08-05 06:40:37 [INFO] nonebot | Waiting for application shutdown. (CTRL+C to force quit)
+08-05 06:40:38 [INFO] nonebot | Application shutdown complete.
+重启进程 [19360].
+08-05 06:40:38 [SUCCESS] nonebot | NoneBot is initializing...
+08-05 06:40:38 [INFO] nonebot | Current Env: prod
+08-05 06:40:39 [SUCCESS] nonebot | Succeeded to load plugin "mention" from "src.plugins.mention"
+08-05 06:40:39 [SUCCESS] nonebot | Succeeded to load plugin "jianyan" from "src.plugins.jianyan"
+08-05 06:40:39 [SUCCESS] nonebot | Succeeded to load plugin "gif" from "src.plugins.gif"
+08-05 06:40:39 [SUCCESS] nonebot | Succeeded to load plugin "muteuser" from "src.plugins.muteuser"
+08-05 06:40:39 [SUCCESS] nonebot | Succeeded to load plugin "update" from "src.plugins.update"
+08-05 06:40:39 [SUCCESS] nonebot | Succeeded to load plugin "weather" from "src.plugins.weather"
+08-05 06:40:39 [SUCCESS] nonebot | Succeeded to load plugin "image" from "src.plugins.image"
+08-05 06:40:39 [SUCCESS] nonebot | Succeeded to load plugin "id" from "src.plugins.id"
+08-05 06:40:39 [SUCCESS] nonebot | Succeeded to load plugin "test" from "src.plugins.test"
+08-05 06:40:39 [SUCCESS] nonebot | Succeeded to load plugin "luxun" from "src.plugins.luxun"
+08-05 06:40:39 [SUCCESS] nonebot | Running NoneBot...
+08-05 06:40:39 [SUCCESS] nonebot | Loaded adapters: QQ
+08-05 06:40:39 [INFO] nonebot | Application startup completed.
+08-05 06:40:40 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 06:40:40 [SUCCESS] nonebot | QQ 102801649 | [READY]: {'event_id': None, 'version': 1, 'session_id': 'd51dcffd-262a-41bd-a539-c18cb2123324', 'user': {'id': '15651322840204851368', 'username': '2108机器人-测试中', 'avatar': None, 'bot': True, 'union_openid': None, 'union_user_account': None}, 'shard': (0, 1)}
+08-05 06:41:12 [SUCCESS] nonebot | QQ 102801649 | [GROUP_AT_MESSAGE_CREATE]: Message ROBOT1.0_F5gPrCOMo6tdN9AeCDMMPYNDyMepVe9m3Ixbk.5lqvb9U9Hw15pdRuRaMc68FyfqYhnqUCg-q708mmTEVIfe3VY8TgY.fBUE-aPePurC-7g! from 2B46E01793EDBE51F82E6E4CCCE04AC6@[Group:F4D2DF3718B5C7A09F9B7FF9DD13446F]: [Text(type='text', data={'text': '/梗图 '})]
+08-05 06:41:12 [INFO] nonebot | Event will be handled by Matcher(type='message', module=src.plugins.image, lineno=10)
+08-05 06:41:14 [INFO] nonebot | Matcher(type='message', module=src.plugins.image, lineno=10) running complete
+08-05 06:41:21 [SUCCESS] nonebot | QQ 102801649 | [GROUP_AT_MESSAGE_CREATE]: Message ROBOT1.0_F5gPrCOMo6tdN9AeCDMMPXCRj2TPk8.MeWyeDLK-GkJokwwpDzVY7yuey4vpn8zGHL-fP8y54NUd2HMbZKRfxIbFKIZ.EuBYZnnHMwc8XRI! from 2B46E01793EDBE51F82E6E4CCCE04AC6@[Group:F4D2DF3718B5C7A09F9B7FF9DD13446F]: [Text(type='text', data={'text': '/梗图 '})]
+08-05 06:41:21 [INFO] nonebot | Event will be handled by Matcher(type='message', module=src.plugins.image, lineno=10)
+08-05 06:41:23 [INFO] nonebot | Matcher(type='message', module=src.plugins.image, lineno=10) running complete
+Watchfiles 在 "src\plugins\image.py" 中发现变化. 正在重新加载...
+08-05 06:42:21 [INFO] nonebot | Shutting down
+08-05 06:42:21 [INFO] nonebot | Waiting for application shutdown. (CTRL+C to force quit)
+08-05 06:42:21 [INFO] nonebot | Application shutdown complete.
+重启进程 [16224].
+08-05 06:42:22 [SUCCESS] nonebot | NoneBot is initializing...
+08-05 06:42:22 [INFO] nonebot | Current Env: prod
+08-05 06:42:22 [SUCCESS] nonebot | Succeeded to load plugin "muteuser" from "src.plugins.muteuser"
+08-05 06:42:22 [SUCCESS] nonebot | Succeeded to load plugin "update" from "src.plugins.update"
+08-05 06:42:22 [SUCCESS] nonebot | Succeeded to load plugin "image" from "src.plugins.image"
+08-05 06:42:22 [SUCCESS] nonebot | Succeeded to load plugin "test" from "src.plugins.test"
+08-05 06:42:22 [SUCCESS] nonebot | Succeeded to load plugin "luxun" from "src.plugins.luxun"
+08-05 06:42:22 [SUCCESS] nonebot | Succeeded to load plugin "id" from "src.plugins.id"
+08-05 06:42:22 [SUCCESS] nonebot | Succeeded to load plugin "jianyan" from "src.plugins.jianyan"
+08-05 06:42:22 [SUCCESS] nonebot | Succeeded to load plugin "weather" from "src.plugins.weather"
+08-05 06:42:22 [SUCCESS] nonebot | Succeeded to load plugin "mention" from "src.plugins.mention"
+08-05 06:42:22 [SUCCESS] nonebot | Succeeded to load plugin "gif" from "src.plugins.gif"
+08-05 06:42:22 [SUCCESS] nonebot | Running NoneBot...
+08-05 06:42:22 [SUCCESS] nonebot | Loaded adapters: QQ
+08-05 06:42:22 [INFO] nonebot | Application startup completed.
+08-05 06:42:24 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 06:42:24 [SUCCESS] nonebot | QQ 102801649 | [READY]: {'event_id': None, 'version': 1, 'session_id': '6d171eb8-33fc-425d-ada5-bd2d52488b1d', 'user': {'id': '15651322840204851368', 'username': '2108机器人-测试中', 'avatar': None, 'bot': True, 'union_openid': None, 'union_user_account': None}, 'shard': (0, 1)}
+08-05 07:12:24 [WARNING] nonebot | QQ | Received reconnect event from server. Try to reconnect...
+08-05 07:12:29 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 07:12:29 [WARNING] nonebot | QQ | Unknown payload from server: Payload(op=0, s=2, t='RESUMED', d='')
+08-05 07:42:28 [WARNING] nonebot | QQ | Received reconnect event from server. Try to reconnect...
+08-05 07:42:33 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 07:42:33 [WARNING] nonebot | QQ | Unknown payload from server: Payload(op=0, s=3, t='RESUMED', d='')
+08-05 08:12:32 [WARNING] nonebot | QQ | Received reconnect event from server. Try to reconnect...
+08-05 08:12:37 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 08:12:37 [WARNING] nonebot | QQ | Unknown payload from server: Payload(op=0, s=4, t='RESUMED', d='')
+08-05 08:42:37 [WARNING] nonebot | QQ | Received reconnect event from server. Try to reconnect...
+08-05 08:42:40 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 08:42:40 [WARNING] nonebot | QQ | Unknown payload from server: Payload(op=0, s=5, t='RESUMED', d='')
+08-05 09:12:40 [WARNING] nonebot | QQ | Received reconnect event from server. Try to reconnect...
+08-05 09:12:44 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 09:12:44 [WARNING] nonebot | QQ | Unknown payload from server: Payload(op=0, s=6, t='RESUMED', d='')
+08-05 09:42:43 [WARNING] nonebot | QQ | Received reconnect event from server. Try to reconnect...
+08-05 09:42:46 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 09:42:46 [WARNING] nonebot | QQ | Unknown payload from server: Payload(op=0, s=7, t='RESUMED', d='')
+08-05 10:12:46 [WARNING] nonebot | QQ | Received reconnect event from server. Try to reconnect...
+08-05 10:12:50 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 10:12:50 [WARNING] nonebot | QQ | Unknown payload from server: Payload(op=0, s=8, t='RESUMED', d='')
+08-05 10:42:49 [WARNING] nonebot | QQ | Received reconnect event from server. Try to reconnect...
+08-05 10:42:54 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 10:42:54 [WARNING] nonebot | QQ | Unknown payload from server: Payload(op=0, s=9, t='RESUMED', d='')
+08-05 11:12:54 [WARNING] nonebot | QQ | Received reconnect event from server. Try to reconnect...
+08-05 11:12:57 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 11:12:58 [WARNING] nonebot | QQ | Unknown payload from server: Payload(op=0, s=10, t='RESUMED', d='')
+08-05 11:42:57 [WARNING] nonebot | QQ | Received reconnect event from server. Try to reconnect...
+08-05 11:43:00 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 11:43:00 [WARNING] nonebot | QQ | Unknown payload from server: Payload(op=0, s=11, t='RESUMED', d='')
+08-05 12:13:00 [WARNING] nonebot | QQ | Received reconnect event from server. Try to reconnect...
+08-05 12:13:04 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 12:13:04 [WARNING] nonebot | QQ | Unknown payload from server: Payload(op=0, s=12, t='RESUMED', d='')
+08-05 12:43:04 [WARNING] nonebot | QQ | Received reconnect event from server. Try to reconnect...
+08-05 12:43:08 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 12:43:09 [WARNING] nonebot | QQ | Unknown payload from server: Payload(op=0, s=13, t='RESUMED', d='')
+08-05 13:13:08 [WARNING] nonebot | QQ | Received reconnect event from server. Try to reconnect...
+08-05 13:13:13 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 13:13:13 [WARNING] nonebot | QQ | Unknown payload from server: Payload(op=0, s=14, t='RESUMED', d='')
+08-05 13:16:35 [SUCCESS] nonebot | QQ 102801649 | [GROUP_AT_MESSAGE_CREATE]: Message ROBOT1.0_F5gPrCOMo6tdN9AeCDMMPdbT3Ipv96QUHHNmfdFK3GHP5GRe5rUiBmGL4hkMHMUWxLL.bvZlYssZzCn6Y9hEJ69wCd1gBlIv5yum1r2gkAg! from 2B46E01793EDBE51F82E6E4CCCE04AC6@[Group:F4D2DF3718B5C7A09F9B7FF9DD13446F]: [Text(type='text', data={'text': '/梗图 '})]
+08-05 13:16:35 [INFO] nonebot | Event will be handled by Matcher(type='message', module=src.plugins.image, lineno=10)
+08-05 13:16:35 [INFO] nonebot | Matcher(type='message', module=src.plugins.image, lineno=10) running complete
+08-05 13:16:35 [ERROR] nonebot | Running Matcher(type='message', module=src.plugins.image, lineno=10) failed.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\adapters\qq\bot.py", line 607, in _request
+    response = await self.adapter.request(request)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\internal\adapter\adapter.py", line 92, in request
+    return await self.driver.request(setup)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\drivers\httpx.py", line 134, in request
+    return await session.request(setup)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\drivers\httpx.py", line 78, in request
+    response = await self.client.request(
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\httpx\_client.py", line 1527, in request
+    request = self.build_request(
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\httpx\_client.py", line 378, in build_request
+    return Request(
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\httpx\_models.py", line 408, in __init__
+    headers, stream = encode_request(
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\httpx\_content.py", line 216, in encode_request
+    return encode_json(json)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\httpx\_content.py", line 177, in encode_json
+    body = json_dumps(
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type WindowsPath is not JSON serializable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\bot.py", line 16, in <module>
+    nonebot.run()
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\__init__.py", line 337, in run
+    get_driver().run(*args, **kwargs)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\drivers\none.py", line 61, in run
+    anyio.run(self._serve)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\anyio\_core\_eventloop.py", line 74, in run
+    return async_backend.run(func, args, {}, backend_options)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2310, in run
+    return runner.run(wrapper())
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 217, in run
+    return self._loop.run_until_complete(task)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1909, in _run_once
+    handle._run()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\utils.py", line 254, in run_coro_with_shield
+    return await coro
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\message.py", line 506, in check_and_run_matcher
+    await _run_matcher(
+> File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\message.py", line 458, in _run_matcher
+    await matcher.run(bot, event, state, stack, dependency_cache)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\internal\matcher\matcher.py", line 926, in run
+    await self.simple_run(bot, event, state, stack, dependency_cache)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\internal\matcher\matcher.py", line 863, in simple_run
+    await handler(
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\dependencies\__init__.py", line 113, in __call__
+    return await cast(Callable[..., Awaitable[R]], self.call)(**values)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\src\plugins\image.py", line 37, in handle_function
+    await image.finish(MessageSegment.image(selected_image))
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\internal\matcher\matcher.py", line 586, in finish
+    await cls.send(message, **kwargs)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\internal\matcher\matcher.py", line 570, in send
+    return await bot.send(event=event, message=_message, **kwargs)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\adapters\qq\bot.py", line 536, in send
+    return await self.send_to_group(
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\adapters\qq\bot.py", line 486, in send_to_group
+    media_info = await self.post_group_files(
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\internal\adapter\bot.py", line 176, in call_api
+    raise exception
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\internal\adapter\bot.py", line 128, in call_api
+    result = await self.adapter._call_api(self, api, **data)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\adapters\qq\adapter.py", line 605, in _call_api
+    return await api_handler(bot, **data)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\adapters\qq\utils.py", line 54, in __call__
+    return await self.func(inst, *args, **kwds)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\adapters\qq\bot.py", line 1881, in post_group_files
+    return type_validate_python(PostGroupFilesReturn, await self._request(request))
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\adapters\qq\bot.py", line 609, in _request
+    raise NetworkError("API request failed") from e
+nonebot.adapters.qq.exception.NetworkError: <NetWorkError message=API request failed>
+08-05 13:23:42 [SUCCESS] nonebot | QQ 102801649 | [C2C_MESSAGE_CREATE]: Message ROBOT1.0_KgVsbjy2Xnov6pQeKCqW7P9ZRlc29TQe3BASF6S9IM6vZWtISXyv93TdZ2sbI2ixhgYtYoLrK9xEXk5uguyO1FKTBl0bDXXBybve5OK.Tdk! from 2B46E01793EDBE51F82E6E4CCCE04AC6: [Text(type='text', data={'text': '/梗图'})]
+08-05 13:23:42 [INFO] nonebot | Event will be handled by Matcher(type='message', module=src.plugins.image, lineno=10)
+08-05 13:23:42 [INFO] nonebot | Matcher(type='message', module=src.plugins.image, lineno=10) running complete
+08-05 13:23:42 [ERROR] nonebot | Running Matcher(type='message', module=src.plugins.image, lineno=10) failed.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\adapters\qq\bot.py", line 607, in _request
+    response = await self.adapter.request(request)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\internal\adapter\adapter.py", line 92, in request
+    return await self.driver.request(setup)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\drivers\httpx.py", line 134, in request
+    return await session.request(setup)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\drivers\httpx.py", line 78, in request
+    response = await self.client.request(
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\httpx\_client.py", line 1527, in request
+    request = self.build_request(
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\httpx\_client.py", line 378, in build_request
+    return Request(
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\httpx\_models.py", line 408, in __init__
+    headers, stream = encode_request(
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\httpx\_content.py", line 216, in encode_request
+    return encode_json(json)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\httpx\_content.py", line 177, in encode_json
+    body = json_dumps(
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type WindowsPath is not JSON serializable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\bot.py", line 16, in <module>
+    nonebot.run()
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\__init__.py", line 337, in run
+    get_driver().run(*args, **kwargs)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\drivers\none.py", line 61, in run
+    anyio.run(self._serve)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\anyio\_core\_eventloop.py", line 74, in run
+    return async_backend.run(func, args, {}, backend_options)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2310, in run
+    return runner.run(wrapper())
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 217, in run
+    return self._loop.run_until_complete(task)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 603, in run_forever
+    self._run_once()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1909, in _run_once
+    handle._run()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\utils.py", line 254, in run_coro_with_shield
+    return await coro
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\message.py", line 506, in check_and_run_matcher
+    await _run_matcher(
+> File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\message.py", line 458, in _run_matcher
+    await matcher.run(bot, event, state, stack, dependency_cache)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\internal\matcher\matcher.py", line 926, in run
+    await self.simple_run(bot, event, state, stack, dependency_cache)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\internal\matcher\matcher.py", line 863, in simple_run
+    await handler(
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\dependencies\__init__.py", line 113, in __call__
+    return await cast(Callable[..., Awaitable[R]], self.call)(**values)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\src\plugins\image.py", line 37, in handle_function
+    await image.finish(MessageSegment.image(selected_image))
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\internal\matcher\matcher.py", line 586, in finish
+    await cls.send(message, **kwargs)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\internal\matcher\matcher.py", line 570, in send
+    return await bot.send(event=event, message=_message, **kwargs)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\adapters\qq\bot.py", line 528, in send
+    return await self.send_to_c2c(
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\adapters\qq\bot.py", line 437, in send_to_c2c
+    media_info = await self.post_c2c_files(
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\internal\adapter\bot.py", line 176, in call_api
+    raise exception
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\internal\adapter\bot.py", line 128, in call_api
+    result = await self.adapter._call_api(self, api, **data)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\adapters\qq\adapter.py", line 605, in _call_api
+    return await api_handler(bot, **data)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\adapters\qq\utils.py", line 54, in __call__
+    return await self.func(inst, *args, **kwds)
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\adapters\qq\bot.py", line 1773, in post_c2c_files
+    return type_validate_python(PostC2CFilesReturn, await self._request(request))
+  File "C:\Users\Administrator\Desktop\qqbot_dev\nb_test\.venv\lib\site-packages\nonebot\adapters\qq\bot.py", line 609, in _request
+    raise NetworkError("API request failed") from e
+nonebot.adapters.qq.exception.NetworkError: <NetWorkError message=API request failed>
+08-05 13:43:13 [WARNING] nonebot | QQ | Received reconnect event from server. Try to reconnect...
+08-05 13:43:17 [INFO] nonebot | QQ | Bot 102801649 connected
+08-05 13:43:17 [WARNING] nonebot | QQ | Unknown payload from server: Payload(op=0, s=17, t='RESUMED', d='')
+08-05 13:49:05 [SUCCESS] nonebot | QQ 102801649 | [C2C_MESSAGE_CREATE]: Message ROBOT1.0_KgVsbjy2Xnov6pQeKCqW7OaAjN0FTUxR84vzsJcY13U2TK7btWckBKYFzJC7YepYYEG3i-EKzQrIm.8obNy4s1KTBl0bDXXBybve5OK.Tdk! from 2B46E01793EDBE51F82E6E4CCCE04AC6: [Text(type='text', data={'text': '/echo echo'})]
+08-05 13:49:17 [SUCCESS] nonebot | QQ 102801649 | [C2C_MESSAGE_CREATE]: Message ROBOT1.0_KgVsbjy2Xnov6pQeKCqW7GCvok22fYUmokPxWbBVdNGg19rVUJqgZjc.9RWHPDi1FoY7F5qcK1E0MJpqYmZPYlKTBl0bDXXBybve5OK.Tdk! from 2B46E01793EDBE51F82E6E4CCCE04AC6: [Text(type='text', data={'text': '/今日人品 '})]
+08-05 13:49:17 [INFO] nonebot | Event will be handled by Matcher(type='message', module=src.plugins.test, lineno=33)
+08-05 13:49:18 [INFO] nonebot | Matcher(type='message', module=src.plugins.test, lineno=33) running complete
+08-05 13:56:53 [INFO] nonebot | Shutting down
+08-05 13:56:53 [INFO] nonebot | Waiting for application shutdown. (CTRL+C to force quit)
+正在终止进程 [16224]...
+停止重载监视
+
+C:\Users\Administrator\Desktop\qqbot_dev\nb_test>

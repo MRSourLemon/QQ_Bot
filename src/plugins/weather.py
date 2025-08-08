@@ -16,7 +16,7 @@ async def handle_function(args: Message = CommandArg()):
     else:
         await weather.finish("请输入地名")
  
- 
+
 import requests
  
 def get_weather(location):
