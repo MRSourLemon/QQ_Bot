@@ -20,7 +20,8 @@ async def handle_function(args: Message = CommandArg()):
     #await mention.finish(MessageSegment.mention_user(1))  
     if at_name := args.extract_plain_text():
         # 发送@指定用户消息
-        await mention.finish(MessageSegment.mention_user(at_name))
+        msg = f"<qqbot-at-user id=\"{at_name}\" />"
+        await mention.finish(MessageSegment.at(at_name))
         
     else:
         await mention.finish("type in at_name")

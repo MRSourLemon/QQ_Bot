@@ -1,0 +1,10 @@
+from nonebot import on, on_command
+from nonebot.adapters.qq import GroupMessageEvent,Bot
+member_cmd = on_command("member")
+@member_cmd.handle()
+async def handle_group_members(bot: Bot, event: GroupMessageEvent):
+    # 获取QQ群成员列表
+    members = await bot.get_group_members(group_id=event.group_id)
+    
+    member_names = [m.nickname for m in members]
+    await member_cmd.finish(f"群成员: {', '.join(member_names)}")

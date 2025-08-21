@@ -28,7 +28,13 @@ def save_histories(histories: Dict[str, List[dict]]):
 # 在插件中使用
 #user_histories = load_histories()  # 启动时加载
 
-
+# 工具函数：添加消息到历史（自动清理超长历史）
+def _add_message(history: List[dict], role: str, content: str) -> List[dict]:
+    new_history = history + [{"role": role, "content": content}]
+    # 限制历史记录长度（按Token或简单按条数）
+    while len(json.dumps(new_history)) > 10000:  # 简易长度控制
+        new_history.pop(0)
+    return new_history
 
 
 # 星火API配置
@@ -40,6 +46,22 @@ user_histories: Dict[str, List[dict]] = {}
 
 # 注册命令处理器
 spark = on_command("星火", priority=10)
+
+# 新增函数：非流式获取星火响应
+async def _get_spark_response(messages: List[dict]) -> str:
+    headers = {"Authorization": API_KEY, "Content-Type": "application/json"}
+    body = {
+        "model": "4.0Ultra",
+        "messages": messages,
+        "stream": False  # 关键修改：关闭流式
+    }
+
+    response = requests.post(API_URL, json=body, headers=headers, timeout=150)
+    response.raise_for_status()
+    data = response.json()
+    return data["choices"][0]["message"]["content"]
+
+
 
 @spark.handle()
 async def handle_spark(event: MessageEvent):
@@ -63,14 +85,20 @@ async def handle_spark(event: MessageEvent):
     # 添加用户提问到历史
     user_histories[user_id] = _add_message(user_histories[user_id], "user", user_input)
     
-    # 调用星火API（流式）
+#    # 调用星火API（流式）
+#    await spark.send("思考中...")
+#    full_response = ""
+#    async for chunk in _get_spark_stream(user_histories[user_id]):
+#        full_response += chunk
+#        # 分段发送避免消息过长被截断
+#        if len(full_response) % 100 == 0:
+#            await spark.send(chunk)
+
+# 3. 调用星火API（非流式）
     await spark.send("思考中...")
-    full_response = ""
-    async for chunk in _get_spark_stream(user_histories[user_id]):
-        full_response += chunk
-        # 分段发送避免消息过长被截断
-        if len(full_response) % 100 == 0:
-            await spark.send(chunk)
+
+        # 一次性获取完整响应
+    full_response = await _get_spark_response(user_histories[user_id])
 
     # 添加AI回复到历史
     user_histories[user_id] = _add_message(user_histories[user_id], "assistant", full_response)
@@ -79,13 +107,7 @@ async def handle_spark(event: MessageEvent):
     
     await spark.finish(full_response)
 
-# 工具函数：添加消息到历史（自动清理超长历史）
-def _add_message(history: List[dict], role: str, content: str) -> List[dict]:
-    new_history = history + [{"role": role, "content": content}]
-    # 限制历史记录长度（按Token或简单按条数）
-    while len(json.dumps(new_history)) > 8000:  # 简易长度控制
-        new_history.pop(0)
-    return new_history
+
 
 # 工具函数：流式获取星火响应
 async def _get_spark_stream(messages: List[dict]):
