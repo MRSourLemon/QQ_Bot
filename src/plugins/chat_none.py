@@ -38,7 +38,7 @@ def _add_message(history: List[dict], role: str, content: str) -> List[dict]:
 
 
 # 星火API配置
-API_KEY = "Bearer CRsrvqjeyYYvKzOAPJGt:utqNicILaofZIzHQZNfb"
+API_KEY = "Bearer ***"
 API_URL = "https://spark-api-open.xf-yun.com/v1/chat/completions"
 
 # 存储用户对话历史 {user_id: history}
